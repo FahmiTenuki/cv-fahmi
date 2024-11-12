@@ -1,5 +1,5 @@
 import { Card } from "flowbite-react"
-import pp from "../assets/Uki.jpg"
+import pp from "../assets/uki.jpg"
 
 const Profile = () => {
     return (
@@ -17,7 +17,7 @@ const Profile = () => {
                     <span className="text-sm text-gray-500 dark:text-gray-400">Fron-end</span>
                 </div>
                 <div className="coloumn py-4 sm:text-center md:text-left">
-                    <h4 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">Phone +62 858-8893-3445</h4>
+                    <h4 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">Phone +62 858-8892-3445</h4>
                     <h5>Email: fahmigaming029@gmail.com</h5>
                     <h5>Github: github.com/fahmitenuki</h5>
                     <h5>Linkedin: </h5>
