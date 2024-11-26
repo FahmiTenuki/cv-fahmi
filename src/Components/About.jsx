@@ -28,7 +28,7 @@ const About = () => {
           data-aos-easing="ease-in-sine"
         >
           <p className="text-justify text-gray-700 md:leading-7 md:text-xl">
-            Hello, I’m <strong>Fahmi Mifathul Hasan</strong>, I'm a junior programmer who 
+            Hello, I’m <strong>Fahmi Miftahul Hasan</strong>, I'm a junior programmer who 
             believes that coding isn't just about logic, 
             it's also the art of creating solutions. 
             Every bug is an opportunity to learn, 

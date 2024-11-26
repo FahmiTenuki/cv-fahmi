@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <header className='w-full h-20 flex justify-between items-center px-4 fixed top-0 left-0 z-50 shadow-lg bg-white/30 backdrop-blur-md'>
       <div className='text-black text-3xl font-bold'>
-        MyPortfolio
+        Fahmi
       </div>
       <nav className='flex space-x-8'>
         <a href="#home" className='text-black-300 hover:text-cyan-500 transition duration-300'>Home</a>
