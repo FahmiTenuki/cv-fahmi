@@ -1,30 +1,74 @@
-import { Card } from "flowbite-react"
-import pp from "../assets/uki.jpg"
+import { motion } from 'framer-motion';
 
 const Profile = () => {
-    return (
-        <Card className="max-w-full m-5">
-            <div className="flex justify-between px-4 pt-4 flex-wrap">
-                <div className="flex flex-col items-center pb-10">
-                    <img
-                        alt="Profile Image"
-                        height="96"
-                        src={pp}
-                        width="96"
-                        className="mb-3 rounded-full shadow-lg"
-                    />
-                    <h3 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">Fahmi Miftahul Hasan</h3>
-                    <span className="text-sm text-gray-500 dark:text-gray-400">Fron-end</span>
-                </div>
-                <div className="coloumn py-4 sm:text-center md:text-left">
-                    <h4 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">Phone +62 858-8892-3445</h4>
-                    <h5>Email: fahmigaming029@gmail.com</h5>
-                    <h5>Github: github.com/fahmitenuki</h5>
-                    <h5>Linkedin: </h5>
-                </div>
-            </div>
-        </Card>
-    )
-}
+  return (
+    <section
+      id="home"
+      style={{
+        height:'100vh',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        paddingTop: '100px', 
+        textAlign: 'center',
+      }}
+    >
+      <motion.h3
+        initial={{ y: 10, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.6 }}
+        style={{ fontSize: '2rem', color: 'black', marginBottom: '20px' }} 
+      >
+        Hi, my name is
+      </motion.h3>
+      <motion.h1
+        initial={{ y: 10, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.7 }}
+        style={{ fontSize: '4rem', fontWeight: 'bold', color: 'black', marginBottom: '20px' }} 
+      >
+        Fahmi Miftahul Hasan
+        <span style={{ display: 'block', marginTop: '15px', fontSize: '2rem', color: 'black' }}>
+          I build things for the web
+        </span>
+      </motion.h1>
+      <motion.p
+        initial={{ y: 10, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.8 }}
+        style={{ fontSize: '1.5rem', color: 'black', maxWidth: '650px', margin: '0 auto', marginBottom: '20px' }} // Tambahkan margin bawah
+      >
+        <a target="_blank" rel="noopener noreferrer">
+          <span style={{ color: 'black', cursor: 'pointer' }}>
+            Learn more
+          </span>
+        </a>
+      </motion.p>
+      <a href="https://github.com/fahmitenuki" target="_blank" rel="noopener noreferrer">
+        <motion.button
+          initial={{ y: 10, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.9 }}
+          style={{
+            width: '200px',
+            height: '50px',
+            fontSize: '1rem',
+            border: '1px solid black',
+            borderRadius: '8px',
+            color: 'black',
+            backgroundColor: 'transparent',
+            cursor: 'pointer',
+            transition: 'background-color 0.3s',
+          }}
+          onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = 'lightgray')}
+          onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = 'transparent')}
+        >
+          Check out my project!
+        </motion.button>
+      </a>
+    </section>
+  );
+};
 
-export default Profile
+export default Profile;

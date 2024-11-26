@@ -1,19 +1,20 @@
-import { Navbar, NavbarLink } from "flowbite-react"
+import React from 'react';
 
 const Header = () => {
-    return (
-        <Navbar fluid rounded>
-            <Navbar.Brand as={NavbarLink} >
-                <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Curriculum Vitae</span>
-            </Navbar.Brand>
-            <Navbar.Toggle />
-            <Navbar.Collapse>
-                <Navbar.Link href="#" active>
-                    2024
-                </Navbar.Link>
-            </Navbar.Collapse>
-        </Navbar>
-    )
-}
+  return (
+    <header className='w-full h-20 flex justify-between items-center px-4 fixed top-0 left-0 z-50 shadow-lg bg-white/30 backdrop-blur-md'>
+      <div className='text-black text-3xl font-bold'>
+        MyPortfolio
+      </div>
+      <nav className='flex space-x-8'>
+        <a href="#home" className='text-black-300 hover:text-cyan-500 transition duration-300'>Home</a>
+        <a href="#aboutme" className='text-balck-300 hover:text-cyan-500 transition duration-300'>About Me</a>
+        <a href="#skills" className='text-black-300 hover:text-cyan-500 transition duration-300'>Skills</a>
+        <a href="#projects" className='text-balck-300 hover:text-cyan-500 transition duration-300'>Projects</a>
+        <a href="#contact" className='text-black-300 hover:text-cyan-500 transition duration-300'>Contact</a>
+      </nav>
+    </header>
+  );
+};
 
-export default Header
+export default Header;
