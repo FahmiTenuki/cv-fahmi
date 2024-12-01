@@ -4,21 +4,13 @@ const Profile = () => {
   return (
     <section
       id="home"
-      style={{
-        height:'100vh',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        paddingTop: '100px', 
-        textAlign: 'center',
-      }}
+      className="flex flex-col items-center justify-center h-screen pt-24 text-center"
     >
       <motion.h3
         initial={{ y: 10, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.6 }}
-        style={{ fontSize: '2rem', color: 'black', marginBottom: '20px' }} 
+        className="text-2xl text-black mb-5"
       >
         Hi, my name is
       </motion.h3>
@@ -26,10 +18,10 @@ const Profile = () => {
         initial={{ y: 10, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.7 }}
-        style={{ fontSize: '4rem', fontWeight: 'bold', color: 'black', marginBottom: '20px' }} 
+        className="text-4xl md:text-5xl font-bold text-black mb-5"
       >
         Fahmi Miftahul Hasan
-        <span style={{ display: 'block', marginTop: '15px', fontSize: '2rem', color: 'black' }}>
+        <span className="block mt-4 text-2xl md:text-3xl text-black">
           I build things for the web
         </span>
       </motion.h1>
@@ -37,12 +29,10 @@ const Profile = () => {
         initial={{ y: 10, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.8 }}
-        style={{ fontSize: '1.5rem', color: 'black', maxWidth: '650px', margin: '0 auto', marginBottom: '20px' }} // Tambahkan margin bawah
+        className="text-lg md:text-xl text-black max-w-2xl mx-auto mb-5"
       >
         <a target="_blank" rel="noopener noreferrer">
-          <span style={{ color: 'black', cursor: 'pointer' }}>
-            Learn more
-          </span>
+          <span className="text-black cursor-pointer">Learn more</span>
         </a>
       </motion.p>
       <a href="https://github.com/fahmitenuki" target="_blank" rel="noopener noreferrer">
@@ -50,19 +40,7 @@ const Profile = () => {
           initial={{ y: 10, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.9 }}
-          style={{
-            width: '200px',
-            height: '50px',
-            fontSize: '1rem',
-            border: '1px solid black',
-            borderRadius: '8px',
-            color: 'black',
-            backgroundColor: 'transparent',
-            cursor: 'pointer',
-            transition: 'background-color 0.3s',
-          }}
-          onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = 'lightgray')}
-          onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = 'transparent')}
+          className="w-48 h-12 text-lg border border-black rounded-lg text-black bg-transparent cursor-pointer transition duration-300 hover:bg-light-gray"
         >
           Check out my project!
         </motion.button>
