@@ -4,18 +4,21 @@ import React from 'react';
 const projects = [
   {
     title: "Project One",
-    description: "A brief description of Project One. It does amazing things!",
-    image: "https://via.placeholder.com/300"
+    description: "Kasir Fast Respon",
+    image: "src/assets/Screenshot 2024-11-28 122543.png", // Ganti dengan URL gambar yang sesuai
+    link: "https://kasir-fast-respon.vercel.app/"
   },
   {
     title: "Project Two",
-    description: "A brief description of Project Two. It solves many problems!",
-    image: "https://via.placeholder.com/300"
+    description: "ComingSoon!",
+    image: "https://via.placeholder.com/300/33FF57", // Ganti dengan URL gambar yang sesuai
+    link: "https://example.com/project-two" // Ganti dengan tautan yang sesuai
   },
   {
     title: "Project Three",
-    description: "A brief description of Project Three. It's very useful!",
-    image: "https://via.placeholder.com/300"
+    description: "ComingSoon!",
+    image: "https://via.placeholder.com/300/3357FF", // Ganti dengan URL gambar yang sesuai
+    link: "https://example.com/project-three" // Ganti dengan tautan yang sesuai
   },
 ];
 
@@ -41,13 +44,15 @@ const Project = () => {
               className='bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300'
             >
               <img
-                src={project.image}
+                src={project.image} // Menggunakan gambar dari objek proyek
                 alt={project.title}
                 className='w-full h-48 object-cover rounded-md mb-4'
               />
               <h3 className='text-xl font-semibold mb-2'>{project.title}</h3>
               <p className='text-gray-600 mb-4'>{project.description}</p>
               <Button
+                as="a" // Mengubah menjadi tautan
+                href={project.link} // Menggunakan tautan dari objek proyek
                 target="_blank"
                 rel="noopener noreferrer"
                 className='bg-cyan-500 text-white hover:bg-cyan-700'
