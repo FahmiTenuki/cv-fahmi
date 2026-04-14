@@ -1,62 +1,46 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 const Contact = () => {
- 
-  var phoneNumber = '6285889223445'; 
+
+  const phoneNumber = '6285889223445'; 
 
   const sendToWhatsApp = () => {
-      const forInput = document.getElementById('name').value;
-      const emailInput = document.getElementById('email').value;
-      const textareaInput = document.getElementById('message').value;
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const messageText = document.getElementById('message').value;
 
-      const message = `For: ${forInput}\nEmail: ${emailInput}@gmail.com\nMessage: ${textareaInput}`;
+    const message = `Name: ${name}\nEmail: ${email}\nMessage: ${messageText}`;
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
-      const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-
-      window.open(whatsappURL, '_blank');
-  }
-
+    window.open(url, '_blank');
+  };
 
   return (
-    <div name='contact' className='w-full h-screen  text-black-300 pt-60' id='contact'>
-      <div className='max-w-[600px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
-        <div className='w-full flex flex-col justify-center items-center mb-12'>
-          <p className='text-4xl font-bold inline border-b-4 border-cyan-500 text-center mb-6'>
+    <section id='contact' className='w-full py-20 scroll-mt-24'>
+      <div className='max-w-[600px] mx-auto p-4 flex flex-col justify-center'>
+        
+        <div className='text-center mb-10'>
+          <p className='text-4xl font-bold border-b-4 border-cyan-500 inline-block'>
             Contact
           </p>
-          <p className='py-4 text-2xl text-center'>
-            Feel free to reach out!
-          </p>
+          <p className='py-4 text-lg'>Feel free to reach out!</p>
         </div>
-        <form  className='w-full flex flex-col'>
-          <input
-            type='text'
-            id='name'
-            placeholder='Your Name'
-            className='p-2 mb-4 border-2 border-gray-300 rounded-md focus:outline-none focus:border-cyan-500'
-            required
-          />
-          <input
-            type='email'
-            id='email'
-            placeholder='Your Email'
-            className='p-2 mb-4 border-2 border-gray-300 rounded-md focus:outline-none focus:border-cyan-500'
-            required
-          />
-          <textarea
-            id='message'
-            placeholder='Your Message'
-            className='p-2 mb-4 border-2 border-gray-300 rounded-md focus:outline-none focus:border-cyan-500'
-            rows='5'
-            required
-          />
-          <button type='button' target='_blank' className='bg-cyan-500 text-white py-2 px-4 rounded-lg hover:bg-cyan-400 transition duration-300'
-           onClick={sendToWhatsApp}>
+
+        <form className='flex flex-col'>
+          <input id='name' type='text' placeholder='Your Name' className='p-2 mb-4 border rounded' />
+          <input id='email' type='email' placeholder='Your Email' className='p-2 mb-4 border rounded' />
+          <textarea id='message' placeholder='Your Message' className='p-2 mb-4 border rounded' rows='5' />
+
+          <button
+            type='button'
+            onClick={sendToWhatsApp}
+            className='bg-cyan-500 text-white py-2 rounded hover:bg-cyan-400'
+          >
             Send Message
           </button>
         </form>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -3,9 +3,9 @@ import { motion } from 'framer-motion';
 const Profile = () => {
   return (
     <section
-      id="home"
-      className="flex flex-col items-center justify-center h-screen pt-24 text-center"
-    >
+  id="home"
+  className="min-h-screen flex flex-col justify-center items-center text-center px-4 scroll-mt-24"
+>
       <motion.h3
         initial={{ y: 10, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
