@@ -39,7 +39,7 @@ const Project = () => {
             Projects
           </h1>
           <p className="text-lg mt-4">
-            Here are some of the projects I've worked on
+            Berikut beberapa proyek yang telah saya kerjakan.
           </p>
         </div>
 

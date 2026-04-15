@@ -22,7 +22,7 @@ const Profile = () => {
       >
         Fahmi Miftahul Hasan
         <span className="block mt-4 text-2xl md:text-3xl text-black">
-          I build things for the web
+          Frontend Developer | Backend Learner
         </span>
       </motion.h1>
       <motion.p

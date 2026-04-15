@@ -19,7 +19,7 @@ const Skills = () => {
             Skills
           </p>
           <p className='py-4 text-lg sm:text-2xl text-center'>
-            I enjoy learning new things. Here's a list of technologies I've used
+           Saya senang mempelajari hal-hal baru. Berikut daftar teknologi yang pernah saya gunakan.
           </p>
         </div>
 
