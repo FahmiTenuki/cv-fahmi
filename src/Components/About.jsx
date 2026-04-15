@@ -17,7 +17,7 @@ const About = () => {
       <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-center">
         <div className="text-slate-900 flex-1">
           <p className="text-justify text-gray-700 md:leading-7 md:text-xl">
-            Hello, I’m <strong>Fahmi Miftahul Hasan</strong>, Saya adalah seorang fresh graduate``. 
+            Hello, I’m <strong>Fahmi Miftahul Hasan</strong>, Saya adalah seorang fresh graduatec. 
             Saya fokus pada Frontend dan Backend, mulai dari membuat tampilan website yang menarik
              hingga membangun sistem di baliknya agar berjalan dengan baik. Saya senang belajar 
              hal baru dan terus mengembangkan skill saya melalui berbagai project yang saya kerjakan.
