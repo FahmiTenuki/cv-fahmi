@@ -1,21 +1,22 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
 import project1 from "../assets/Screenshot 2024-11-28 122543.png";
+import project2 from "../assets/home.png";
 
 const projects = [
   {
     title: "Kasir Fast Respon",
-    description: "Aplikasi kasir berbasis web dengan fitur transaksi cepat.",
+    description: "",
     image: project1,
     link: "https://kasir-fast-respon.vercel.app/",
     github: "https://github.com/fahmitenuki/kasir-fast-respon",
   },
   {
-    title: "Project Two",
-    description: "Coming Soon!",
-    image: "https://via.placeholder.com/300/33FF57",
+    title: "Elist",
+    description: "  ",
+    image: project2,
     link: "#",
-    github: "#",
+    github: "https://github.com/naufalAdhani/elist-UP.git",
   },
   {
     title: "Project Three",
